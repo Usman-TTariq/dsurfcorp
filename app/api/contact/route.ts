@@ -1,18 +1,18 @@
 /**
  * Contact form API – sends submissions via Resend to your email.
  *
- * Required in .env.local:
- *   RESEND_API_KEY=re_xxx     (from https://resend.com/api-keys)
+ * Resend is currently commented out so `next build` works without RESEND_API_KEY.
+ * To enable: uncomment the Resend lines below and set:
+ *   RESEND_API_KEY=re_xxx
  *   CONTACT_EMAIL=you@example.com
  *
  * Optional:
  *   CONTACT_FROM_EMAIL=onboarding@resend.dev
- *   CONTACT_FROM_NAME=Earnytics LLC Website
+ *   CONTACT_FROM_NAME=dsurfcorp Website
  */
 import { NextRequest, NextResponse } from "next/server";
-import { Resend } from "resend";
-
-const resend = new Resend(process.env.RESEND_API_KEY);
+// import { Resend } from "resend";
+// const resend = new Resend(process.env.RESEND_API_KEY);
 
 export type ContactBody = {
   name: string;
@@ -46,20 +46,6 @@ function escapeHtml(s: string): string {
 }
 
 export async function POST(request: NextRequest) {
-  const toEmail = process.env.CONTACT_EMAIL;
-  if (!toEmail) {
-    return NextResponse.json(
-      { error: "CONTACT_EMAIL is not configured" },
-      { status: 500 }
-    );
-  }
-  if (!process.env.RESEND_API_KEY) {
-    return NextResponse.json(
-      { error: "RESEND_API_KEY is not configured" },
-      { status: 500 }
-    );
-  }
-
   let body: ContactBody;
   try {
     body = await request.json();
@@ -78,8 +64,32 @@ export async function POST(request: NextRequest) {
     );
   }
 
+  // --- Resend disabled: remove this return when you uncomment sending below ---
+  return NextResponse.json(
+    {
+      error:
+        "Email delivery is not configured. Enable Resend in app/api/contact/route.ts and set RESEND_API_KEY.",
+    },
+    { status: 503 }
+  );
+
+  /*
+  const toEmail = process.env.CONTACT_EMAIL;
+  if (!toEmail) {
+    return NextResponse.json(
+      { error: "CONTACT_EMAIL is not configured" },
+      { status: 500 }
+    );
+  }
+  if (!process.env.RESEND_API_KEY) {
+    return NextResponse.json(
+      { error: "RESEND_API_KEY is not configured" },
+      { status: 500 }
+    );
+  }
+
   const fromEmail = process.env.CONTACT_FROM_EMAIL || "onboarding@resend.dev";
-  const fromName = process.env.CONTACT_FROM_NAME || "Earnytics LLC Website";
+  const fromName = process.env.CONTACT_FROM_NAME || "dsurfcorp Website";
 
   const { data, error } = await resend.emails.send({
     from: `${fromName} <${fromEmail}>`,
@@ -92,4 +102,5 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: error.message }, { status: 500 });
   }
   return NextResponse.json({ success: true, id: data?.id });
+  */
 }
