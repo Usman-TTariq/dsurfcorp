@@ -23,7 +23,7 @@ export default function PrivacyPage() {
           <section className="mb-10">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">1. Introduction</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
-              At Earnytics LLC, we take your privacy seriously. This Privacy Policy explains how we collect, use, 
+              At dsurfcorp, we take your privacy seriously. This Privacy Policy explains how we collect, use, 
               disclose, and safeguard your information when you visit our website or use our services.
             </p>
             <p className="text-gray-700 leading-relaxed">
@@ -162,7 +162,7 @@ export default function PrivacyPage() {
               If you have questions or concerns about this Privacy Policy, please contact us:
             </p>
             <div className="bg-gray-50 rounded-xl p-6">
-              <p className="text-gray-700 mb-2"><strong>Email:</strong> info@earnytics.com</p>
+              <p className="text-gray-700 mb-2"><strong>Email:</strong> info@dsurfcorp.net</p>
               <p className="text-gray-700 mb-2"><strong>Phone:</strong> +1 (347) 588-7791</p>
               <p className="text-gray-700"><strong>Address:</strong> 3415 MCLAUGHLIN #107, LOS ANGELES, CA 90066</p>
             </div>

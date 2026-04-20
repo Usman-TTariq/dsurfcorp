@@ -188,7 +188,7 @@ export default function Pricing() {
         <div className="mt-20 text-center">
           <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg p-8">
             <h3 className="text-2xl font-bold text-gray-900 mb-6">
-              Why Choose Earnytics LLC?
+              Why Choose dsurfcorp?
             </h3>
             <div className="grid md:grid-cols-3 gap-6">
               {[
@@ -221,7 +221,7 @@ export default function Pricing() {
         <div className="mt-16 bg-gradient-to-r from-orange-500 to-red-500 rounded-2xl p-10 text-center text-white">
           <h3 className="text-3xl font-bold mb-3">Ready to Get Started?</h3>
           <p className="text-white/90 text-lg mb-6 max-w-2xl mx-auto">
-            Join hundreds of successful businesses using Earnytics LLC
+            Join hundreds of successful businesses using dsurfcorp
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a href="/contact">

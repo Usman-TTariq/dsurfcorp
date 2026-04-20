@@ -1,4 +1,4 @@
-# Earnytics LLC - Business Solutions Website
+# dsurfcorp - Business Solutions Website
 
 A modern, responsive Next.js website showcasing comprehensive business solutions.
 
@@ -97,7 +97,7 @@ nextstudio/
 - Highlighted "Most Popular" plan
 
 ### Footer
-- Earnytics LLC branding
+- dsurfcorp branding
 - Contact information
 - Quick links
 - Back to top button

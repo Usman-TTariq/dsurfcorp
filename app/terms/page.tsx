@@ -23,7 +23,7 @@ export default function TermsPage() {
           <section className="mb-10">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">1. Agreement to Terms</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
-              By accessing and using Earnytics LLC&apos;s services, you agree to be bound by these Terms and Conditions. 
+              By accessing and using dsurfcorp&apos;s services, you agree to be bound by these Terms and Conditions. 
               If you do not agree with any part of these terms, you must not use our services.
             </p>
             <p className="text-gray-700 leading-relaxed">
@@ -34,7 +34,7 @@ export default function TermsPage() {
           <section className="mb-10">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">2. Services Provided</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
-              Earnytics LLC provides comprehensive business solutions including:
+              dsurfcorp provides comprehensive business solutions including:
             </p>
             <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4">
               <li>Website Design and Development</li>
@@ -64,7 +64,7 @@ export default function TermsPage() {
           <section className="mb-10">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">4. Intellectual Property</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
-              All content, designs, code, and materials created by Earnytics LLC remain our intellectual property until 
+              All content, designs, code, and materials created by dsurfcorp remain our intellectual property until 
               full payment is received. Upon full payment:
             </p>
             <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4">
@@ -100,7 +100,7 @@ export default function TermsPage() {
           <section className="mb-10">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">7. Limitation of Liability</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
-              Earnytics LLC shall not be liable for any indirect, incidental, special, consequential, or punitive damages 
+              dsurfcorp shall not be liable for any indirect, incidental, special, consequential, or punitive damages 
               resulting from your use of our services. Our total liability shall not exceed the amount paid for the 
               specific service in question.
             </p>
@@ -128,7 +128,7 @@ export default function TermsPage() {
               For questions about these Terms & Conditions, please contact us:
             </p>
             <div className="bg-gray-50 rounded-xl p-6">
-              <p className="text-gray-700 mb-2"><strong>Email:</strong> info@earnytics.com</p>
+              <p className="text-gray-700 mb-2"><strong>Email:</strong> info@dsurfcorp.net</p>
               <p className="text-gray-700 mb-2"><strong>Phone:</strong> +1 (347) 588-7791</p>
               <p className="text-gray-700"><strong>Address:</strong> 3415 MCLAUGHLIN #107, LOS ANGELES, CA 90066</p>
             </div>
